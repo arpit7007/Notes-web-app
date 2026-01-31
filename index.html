@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id = "heading">Notes</div>
+        <div class = "navbar" id ="navbar1">
+            <button id = "create" onclick="show_editor()">Create Note </button>
+            <button id ="delete">Delete Note</button>
+        </div>
+        <div class="navbar" id="navbar2">
+            <button id = "save" onclick="save()">Save</button>
+        </div>
+        <div id="editor">
+            <div class="input-wrapper">
+                <textarea name="notes" id="input"></textarea>
+            </div>
+        </div>
+        <div class="allnotes" id="notes-list" >
+            
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+</html>
