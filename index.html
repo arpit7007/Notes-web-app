@@ -6,14 +6,18 @@
     <body>
         <div id = "heading">Notes</div>
         <div class = "navbar" id ="navbar1">
-            <button id = "create" onclick="show_editor()">Create Note </button>
+            <button id = "create" onclick="create_note()">Create Note </button>
             <button id ="delete">Delete Note</button>
         </div>
         <div class="navbar" id="navbar2">
             <button id = "save" onclick="save()">Save</button>
         </div>
+        <div class ="navbar" id="navbar3">
+            <button id="savechanges" onclick="savechanges()">Save Changes</button>
+        </div>
         <div id="editor">
             <div class="input-wrapper">
+                <input type="text" id="untitle" placeholder="Untitled">
                 <textarea name="notes" id="input"></textarea>
             </div>
         </div>
