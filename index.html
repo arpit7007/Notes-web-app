@@ -2,12 +2,14 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/185618af72.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div id = "heading">Notes</div>
+       
         <div class = "navbar" id ="navbar1">
+            <div id = "heading">Notes</div>
             <button id = "create" onclick="create_note()">Create Note </button>
-            <button id ="delete">Delete Note</button>
+            
         </div>
         <div class="navbar" id="navbar2">
             <button id = "save" onclick="save()">Save</button>
@@ -24,7 +26,12 @@
         <div class="allnotes" id="notes-list" >
             
         </div>
+        <div class="empty-state" id="emptyState">
+            <h3>No notes yet</h3>
+            <p>Click “Create Note” to add your first note</p>
+        </div>
     
         <script src="script.js"></script>
+        
     </body>
 </html>
