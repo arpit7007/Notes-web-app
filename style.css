@@ -417,3 +417,101 @@ textarea::placeholder {
   font-size: 0.9rem;
   opacity: 0.8;
 }
+
+
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    padding: 0 16px;
+    height: 52px;
+  }
+
+  #heading {
+    font-size: 1.3rem;
+  }
+
+  #create {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+
+  /* Notes list */
+  #notes-list {
+    padding-top: 16px;
+    gap: 10px;
+  }
+
+  /* Card layout */
+  .listui {
+    width: 94%;
+    grid-template-columns: 1fr auto;
+    row-gap: 10px;
+    padding: 14px 16px;
+  }
+
+  /* Move buttons below content */
+  .button-wrapper {
+    grid-column: 2;
+    display: flex;
+    gap: 10px;
+  }
+
+  /* Text sizes */
+  .note-title {
+    font-size: 1.6rem;
+    max-width: 100%;
+  }
+
+  .note-desc {
+    font-size: 0.85rem;
+  }
+
+  .note-time {
+    font-size: 0.8rem;
+  }
+
+  /* Buttons */
+  .edit-buttonui,
+  .delete-buttonui {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  /* Editor */
+  .input-wrapper {
+    width: 94%;
+    padding: 16px;
+  }
+
+  #untitle {
+    font-size: 1.4rem;
+  }
+
+  #input {
+    min-height: 50vh;
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 480px) {
+
+  #heading {
+    font-size: 1.15rem;
+  }
+
+  .note-title {
+    font-size: 1.3rem;
+  }
+
+  .edit-buttonui,
+  .delete-buttonui {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  #input {
+    min-height: 45vh;
+  }
+}
